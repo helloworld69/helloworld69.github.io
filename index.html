@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<style>
+			body {
+				overflow: hidden;
+			}
+		</style>
+		<script>
+			$(function(){
+  $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+
+  $(window).resize(function(){
+    $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+  });
+});
+
+		</script>
 	</head>
 	<body>
 		<iframe id="video" src="//www.youtube.com/embed/5iiPC-VGFLU" frameborder="0" allowfullscreen></iframe>
